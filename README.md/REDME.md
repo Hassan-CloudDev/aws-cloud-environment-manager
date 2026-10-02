@@ -60,3 +60,11 @@ Create EventBridge Scheduler rules:
 Nightly Shutdown: cron(0 20 * * ? *) targeting ec2_scheduler with payload {"action": "stop"}.
 
 Daily Backup: cron(0 23 * * ? *) targeting ebs_backup.
+
+## 📷 System Architecture & Verification
+
+![Architecture Diagram](photoes/Screenshot%20(727).png)
+
+![Lambda Test Results](photoes/Screenshot%20(747).png)
+
+![EC2 Instance Status](photoes/Screenshot%20(748).png)
