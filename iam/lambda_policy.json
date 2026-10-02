@@ -1,0 +1,29 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "EC2Management",
+            "Effect": "Allow",
+            "Action": [
+                "ec2:DescribeInstances",
+                "ec2:StartInstances",
+                "ec2:StopInstances",
+                "ec2:CreateSnapshot",
+                "ec2:CreateTags",
+                "ec2:DescribeSnapshots",
+                "ec2:DescribeVolumes"
+            ],
+            "Resource": "*"
+        },
+        {
+            "Sid": "Logging",
+            "Effect": "Allow",
+            "Action": [
+                "logs:CreateLogGroup",
+                "logs:CreateLogStream",
+                "logs:PutLogEvents"
+            ],
+            "Resource": "arn:aws:logs:*:*:*"
+        }
+    ]
+}
